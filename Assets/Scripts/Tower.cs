@@ -3,6 +3,7 @@
 public class Tower : MonoBehaviour
 {
     public float range = 5f; // The range within which the tower can target enemies
+    [Range(0.1f,5f)]
     public float fireRate = 1f; // The rate at which the tower shoots (1 shot per second)
     public GameObject bulletPrefab; // The bullet prefab that will be instantiated when shooting
     private float fireCountdown = 0f; // Countdown timer to control when the tower can fire again
